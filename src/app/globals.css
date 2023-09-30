@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  overflow: hidden;
 }
 
 a:hover {
@@ -54,3 +55,5 @@ a:hover {
 .icons:hover {
   color: grey;
 }
+
+
