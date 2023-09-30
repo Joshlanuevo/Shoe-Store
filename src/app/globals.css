@@ -50,3 +50,7 @@ a:hover {
   color: 'white';      
   cursor: 'pointer';  
 }
+
+.icons:hover {
+  color: grey;
+}
