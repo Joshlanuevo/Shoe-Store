@@ -5,7 +5,7 @@ import { AiOutlineUser, AiOutlineSearch, AiOutlineShoppingCart } from "react-ico
 
 const Header = () => {
     return ( 
-        <div className="navbar bg-black text-base-100">
+        <div className="navbar absolute text-base-100 z-10 hover:bg-black">
         <div className="navbar-start">
             <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

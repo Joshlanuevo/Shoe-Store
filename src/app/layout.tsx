@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AnnouncementBar />
         <Header />
-        <main className="container">
+        <main className="container relative">
           {children}
         </main>
       </body>
