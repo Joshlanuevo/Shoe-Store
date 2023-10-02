@@ -1,7 +1,9 @@
 import Image from "next/image";
+
 import AirJordan from "../../public/images/main-page/jordan-1.jpg";
 
 export default function Home() {
+  
   return (
     <div className="z-0 h-screen w-screen absolute">
       <div className="h-full w-full">
