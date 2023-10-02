@@ -47,7 +47,15 @@ a:hover {
   color: grey;
 }
 
-
+.error-message {
+  position: absolute;
+  text-align: center;
+  top: 450px;
+  left: 50%;
+  transform: none;
+  transform: translateX(-50%);
+  color: #000;
+}
 
 
 

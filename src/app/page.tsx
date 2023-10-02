@@ -11,7 +11,6 @@ export default function Home() {
             objectFit="cover"
             alt="Jordan One Shoes"
             quality={100}
-            className="main-image"
           />
           <div className="overlay absolute top-0 right-0 bottom-0 left-0 transition-colors duration-300"></div>
       </div>
