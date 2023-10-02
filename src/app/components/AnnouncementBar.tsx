@@ -31,7 +31,7 @@ const AnnouncementBar = () => {
     const capitalizedAnnouncement = capitalizeWords(announcements[announcementIndex]);
 
     return (
-        <div key={announcementIndex} className="bg-[#2a2727] font-semibold p-1 text-center text-white">
+        <div key={announcementIndex} className="bg-[#2a2727] font-semibold p-1 text-center text-white w-screen">
             <p className="text-sm animate__animated animate__fadeIn">
                 {capitalizedAnnouncement}
             </p>
