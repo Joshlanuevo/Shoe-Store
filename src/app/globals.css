@@ -50,8 +50,8 @@ a:hover {
 .error-message {
   position: absolute;
   text-align: center;
-  top: 450px;
-  left: 50%;
+  top: 420px;
+  left: 51%;
   transform: none;
   transform: translateX(-50%);
   color: #000;

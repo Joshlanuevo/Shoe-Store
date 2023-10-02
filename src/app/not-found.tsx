@@ -21,23 +21,23 @@ const NotFound = () => {
             </div>
             <div className="error-message">
                 <h1 className="text-4xl font-bold text-black">404 Error</h1>
-                <p className="text-lg text-black">
+                <p className="text-lg text-black font-light">
                 We can't seem to find the page you're looking for.
                 </p>
-                <div className="mt-4">
-                <Link 
-                    href="/" 
-                    className="bg-blue-500 hover:bg-blue-700 text-white 
-                    font-bold py-2 px-4 m-4 rounded"
-                >
-                    Shop Men's
-                </Link>
-                <Link 
-                    href="/" 
-                    className="bg-blue-500 hover:bg-blue-700 text-white 
-                    font-bold py-2 px-4 m-4 rounded">
-                    Shop Women's
-                </Link>
+                <div className="mt-10">
+                    <Link 
+                        href="/" 
+                        className="bg-[#2a2727] hover:bg-blue-700 text-white 
+                        font-bold py-4 px-6 mx-4 rounded"
+                    >
+                        Shop Men's
+                    </Link>
+                    <Link 
+                        href="/" 
+                        className="bg-[#2a2727] hover:bg-blue-700 text-white 
+                        font-bold py-4 px-6 mx-4 rounded">
+                        Shop Women's
+                    </Link>
                 </div>
             </div>
         </div>
