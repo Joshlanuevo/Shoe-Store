@@ -21,14 +21,15 @@ const NotFound = () => {
             </div>
             <div className="error-message">
                 <h1 className="text-4xl font-bold text-black">404 Error</h1>
-                <p className="text-lg text-black font-light">
+                <p className="text-lg text-black font-light whitespace-nowrap">
                 We can't seem to find the page you're looking for.
                 </p>
-                <div className="mt-10 uppercase">
+                <div className="flex flex-row sm:flex-row items-center justify-center mt-10 uppercase">
                     <Button 
                         href="/" 
                         className="bg-[#fdb49c] text-white hover:bg-transparent hover:text-black 
-                        hover:border-solid border-2 border-[#fdb49c] font-bold py-4 px-6 mx-4 rounded"
+                        hover:border-solid border-2 border-[#fdb49c] font-medium sm:mb-0 sm:mx-4
+                        whitespace-nowrap py-4 px-6 mx-4 rounded"
                         onClick={() => {
                             // Handle click logic
                         }}
@@ -41,7 +42,8 @@ const NotFound = () => {
                     <Button 
                         href="/" 
                         className="bg-[#fdb49c] text-white hover:bg-transparent hover:text-black 
-                        hover:border-solid border-2 border-[#fdb49c] font-bold py-4 px-6 mx-4 rounded"
+                        hover:border-solid border-2 border-[#fdb49c] font-medium sm:mb-0 sm:mx-4 
+                        whitespace-nowrap py-4 px-6 mx-4 rounded"
                         onClick={() => {
                             // Handle click logic
                         }}
