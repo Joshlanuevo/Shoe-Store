@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Button from "./shared/components/FormElements/Button";
 
 import ErrorImage from "../../public/images/etc/1469027859-jordan-1.jpg";
 
@@ -24,20 +24,32 @@ const NotFound = () => {
                 <p className="text-lg text-black font-light">
                 We can't seem to find the page you're looking for.
                 </p>
-                <div className="mt-10">
-                    <Link 
+                <div className="mt-10 uppercase">
+                    <Button 
                         href="/" 
-                        className="bg-[#2a2727] hover:bg-blue-700 text-white 
-                        font-bold py-4 px-6 mx-4 rounded"
+                        className="bg-[#fdb49c] text-white hover:bg-transparent hover:text-black 
+                        hover:border-solid border-2 border-[#fdb49c] font-bold py-4 px-6 mx-4 rounded"
+                        onClick={() => {
+                            // Handle click logic
+                        }}
+                        type="button"
+                        disabled={false}  
                     >
                         Shop Men's
-                    </Link>
-                    <Link 
+                    </Button>
+
+                    <Button 
                         href="/" 
-                        className="bg-[#2a2727] hover:bg-blue-700 text-white 
-                        font-bold py-4 px-6 mx-4 rounded">
+                        className="bg-[#fdb49c] text-white hover:bg-transparent hover:text-black 
+                        hover:border-solid border-2 border-[#fdb49c] font-bold py-4 px-6 mx-4 rounded"
+                        onClick={() => {
+                            // Handle click logic
+                        }}
+                        type="button"
+                        disabled={false}  
+                    >
                         Shop Women's
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </div>
