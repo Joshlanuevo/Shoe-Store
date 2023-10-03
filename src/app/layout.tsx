@@ -4,12 +4,11 @@ import { Inter } from 'next/font/google'
 
 import Header from './shared/components/Navigation/Header'
 import AnnouncementBar from './shared/components/Navigation/AnnouncementBar'
-import { generatePageTitle } from './shared/util/title'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: generatePageTitle(),
+  title: "Shoe Store",
   description: 'Discover and shop a wide range of products on our E-Commerce platform.',
 }
 
