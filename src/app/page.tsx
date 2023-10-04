@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./shared/components/FormElements/Button";
-import AirJordan from "../../public/images/main-page/jordan-1.jpg";
+
+import AirJordan from "../../public/images/main-page/air-jordan.jpg";
 
 export default function Home() {
   return (
