@@ -1,6 +1,6 @@
 const WomensPage = () => {
     return ( 
-        <div>
+        <div className="py-16 md:py-28">
             <h1>Womens Page</h1>
         </div>
     );
