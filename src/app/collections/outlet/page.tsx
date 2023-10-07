@@ -1,6 +1,6 @@
 const OutletPage = () => {
     return ( 
-        <div className="py-16 md:py-28">
+        <div className="h-screen py-16 md:py-28">
             <h1>Outlet Page</h1>
         </div>
     );

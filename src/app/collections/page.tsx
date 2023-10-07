@@ -1,6 +1,6 @@
 const CollectionsPage = () => {
     return ( 
-        <div>
+        <div className="h-screen py-16 md:py-28">
             <h1>All Collections!</h1>
         </div>
     );

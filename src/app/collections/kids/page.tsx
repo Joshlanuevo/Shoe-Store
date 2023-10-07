@@ -1,6 +1,6 @@
 const KidsPage = () => {
     return ( 
-        <div className="py-16 md:py-28">
+        <div className="h-screen py-16 md:py-28">
             <h1>Kids Page</h1>
         </div>
     );
