@@ -1,0 +1,47 @@
+[
+    {
+        "id": "p1",
+        "name": "Tunero Track Jacket",
+        "price": 79.99,
+        "currency": "USD",
+        "colors": ["White", "Black", "Blue"],
+        "sizes": ["S", "M", "L", "XL"],
+        "image": "https://example.com/tunero_track_jacket.jpg"
+    },
+    {
+        "id": "p2",
+        "name": "Tunero Track Jacket",
+        "price": 79.99,
+        "currency": "USD",
+        "colors": ["White", "Black", "Blue"],
+        "sizes": ["S", "M", "L", "XL"],
+        "image": "https://example.com/tunero_track_jacket.jpg"
+    },
+    {
+        "id": "p3",
+        "name": "Tunero Track Jacket",
+        "price": 79.99,
+        "currency": "USD",
+        "colors": ["White", "Black", "Blue"],
+        "sizes": ["S", "M", "L", "XL"],
+        "image": "https://example.com/tunero_track_jacket.jpg"
+    },
+    {
+        "id": "p4",
+        "name": "Tunero Track Jacket",
+        "price": 79.99,
+        "currency": "USD",
+        "colors": ["White", "Black", "Blue"],
+        "sizes": ["S", "M", "L", "XL"],
+        "image": "https://example.com/tunero_track_jacket.jpg"
+    },
+    {
+        "id": "p5",
+        "name": "Tunero Track Jacket",
+        "price": 79.99,
+        "currency": "USD",
+        "colors": ["White", "Black", "Blue"],
+        "sizes": ["S", "M", "L", "XL"],
+        "image": "https://example.com/tunero_track_jacket.jpg"
+    }
+]
