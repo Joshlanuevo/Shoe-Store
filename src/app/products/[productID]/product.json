@@ -1,47 +1,47 @@
 [
     {
         "id": "p1",
-        "name": "Tunero Track Jacket",
+        "name": "Jordan Shoes",
         "price": 79.99,
         "currency": "USD",
         "colors": ["White", "Black", "Blue"],
         "sizes": ["S", "M", "L", "XL"],
-        "image": "https://example.com/tunero_track_jacket.jpg"
+        "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3e64e3b3-70f6-4fe5-9db7-e4176fd525f2/air-jordan-1-mid-older-shoes-wqHdzW.png"
     },
     {
         "id": "p2",
-        "name": "Tunero Track Jacket",
+        "name": "Jordan Shoes",
         "price": 79.99,
         "currency": "USD",
         "colors": ["White", "Black", "Blue"],
         "sizes": ["S", "M", "L", "XL"],
-        "image": "https://example.com/tunero_track_jacket.jpg"
+        "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/390ed0de-62e8-4698-8383-bad3b9092583/air-jordan-1-retro-high-og-shoes-Pz6fZ9.png"
     },
     {
         "id": "p3",
-        "name": "Tunero Track Jacket",
+        "name": "Jordan Shoes",
         "price": 79.99,
         "currency": "USD",
         "colors": ["White", "Black", "Blue"],
         "sizes": ["S", "M", "L", "XL"],
-        "image": "https://example.com/tunero_track_jacket.jpg"
+        "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4e22bda0-1183-4d5f-9165-903c35e8ff56/air-jordan-1-mid-se-shoes-tKS2kt.png"
     },
     {
         "id": "p4",
-        "name": "Tunero Track Jacket",
+        "name": "Jordan Shoes",
         "price": 79.99,
         "currency": "USD",
         "colors": ["White", "Black", "Blue"],
         "sizes": ["S", "M", "L", "XL"],
-        "image": "https://example.com/tunero_track_jacket.jpg"
+        "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5831e66b-9c93-41e1-ae43-6f2dfa7a7fc3/air-jordan-1-low-flyease-easy-on-off-shoes-SsT4HK.png"
     },
     {
         "id": "p5",
-        "name": "Tunero Track Jacket",
+        "name": "Jordan Shoes",
         "price": 79.99,
         "currency": "USD",
         "colors": ["White", "Black", "Blue"],
         "sizes": ["S", "M", "L", "XL"],
-        "image": "https://example.com/tunero_track_jacket.jpg"
+        "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/76e258c2-83e0-4feb-a647-b242a71e0bb4/air-jordan-1-low-se-shoes-fQgpsv.png"
     }
 ]

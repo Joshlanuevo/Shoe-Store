@@ -24,15 +24,14 @@ const TrendingSection = () => {
     }
 
     return ( 
-        <div className="trending-section h-screen">
-            <div>
-                <h1>TRENDING NOW</h1>
-                <div className="arrows"></div>
+        <div className="relative w-screen h-screen bg-gray-100 p-8 flex flex-col items-center justify-center">
+            <div className="mb-2 mt-4">
+                <h1 className="text-4xl font-bold text-gray-800">TRENDING NOW</h1>
             </div>
-            <div className="items">
+            <div className="flex-1 flex items-center justify-center">
                 <Product products={products} />
             </div>
-        </div>
+      </div>
     );
 }
  
