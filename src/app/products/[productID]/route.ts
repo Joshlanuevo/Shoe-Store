@@ -5,20 +5,20 @@ export async function GET(request) {
     return NextResponse.json(products);
 }
 
-export async function POST(request) {
-    const { id, name, price, currency, colors, sizes, image } = await request.json();
+// export async function POST(request) {
+//     const { id, name, price, currency, colors, sizes, image } = await request.json();
 
-    const newProduct = {
-        id,
-        name,
-        price,
-        currency,
-        colors,
-        sizes,
-        image
-    }
+//     const newProduct = {
+//         id,
+//         name,
+//         price,
+//         currency,
+//         colors,
+//         sizes,
+//         image
+//     }
 
-    products.push(newProduct);
+//     products.push(newProduct);
 
-    return NextResponse.json(products);
-}
+//     return NextResponse.json(products);
+// }

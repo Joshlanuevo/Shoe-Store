@@ -1,38 +1,62 @@
 "use client"
-import { useState, useEffect } from "react";
-
-import Product from "../Products/Product";
-import LoadingSpinner from "../UIElements/LoadingSpinner";
+import React, { useState, useEffect } from 'react';
+import LoadingSpinner from '../UIElements/LoadingSpinner';
+import ProductList from '../Products/ProductList';
 
 const TrendingSection = () => {
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        const fetchProducts = async () => {
-            const res = await fetch("/products/products");
-            const data = await res.json();
-            setProducts(data);
-            setLoading(false)
-        }
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const res = await fetch('/products/products');
+      const data = await res.json();
+      setProducts(data);
+      setLoading(false);
+    };
 
-        fetchProducts();
-    }, []);
+    fetchProducts();
+  }, []);
 
-    if (loading) {
-        <LoadingSpinner />
-    }
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
+  };
 
-    return ( 
-        <div className="relative w-screen h-screen bg-gray-100 p-8 flex flex-col items-center justify-center">
-            <div className="mb-2 mt-4">
-                <h1 className="text-4xl font-bold text-gray-800">TRENDING NOW</h1>
-            </div>
-            <div className="flex-1 flex items-center justify-center">
-                <Product products={products} />
-            </div>
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + products.length) % products.length);
+  };
+
+  if (loading) {
+    return <LoadingSpinner />;
+  }
+
+  const isAtStart = currentIndex === 0;
+  const isAtEnd = currentIndex === products.length - 1;
+
+  return (
+    <div className="trending-page">
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-2xl font-bold pt-8 pl-8 uppercase font-sans">Trending now</h1>
+        <div className="flex pt-8 pr-8">
+          <button onClick={handlePrev} className={`rounded-full bg-gray-200 text-gray-900 p-2 mr-2 ${isAtStart ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={isAtStart}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button onClick={handleNext} className={`rounded-full bg-gray-200 text-gray-900 p-2 ${isAtEnd ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={isAtEnd}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
       </div>
-    );
-}
- 
+      <div className="arrows"></div>
+      <ProductList items={products} currentIndex={currentIndex} />
+    </div>
+  );
+};
+
 export default TrendingSection;
+
+
