@@ -19,7 +19,7 @@ const EmailSection: React.FC<EmailSectionProps> = () => {
   };
 
   return (
-    <div className="mx-auto mt-8 p-6 flex flex-col lg:flex-row">
+    <div className="mx-auto w-screen mt-8 p-6 flex flex-col lg:flex-row">
       <div className='div-1 flex-1 lg:mb-0 mb-4 lg:ml-4'>
         <h2 className="text-2xl font-bold mb-2 font-sans">JOIN OUR NEWSLETTER</h2>
         <p className="text-gray-600 font-serif italic ">Subscribe to receive updates, access to exclusive deals, and more.</p>

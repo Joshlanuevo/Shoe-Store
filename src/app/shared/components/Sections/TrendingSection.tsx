@@ -28,14 +28,18 @@ const TrendingSection = () => {
   };
 
   if (loading) {
-    return <LoadingSpinner />;
+    return (
+      <div className='center'>
+        <LoadingSpinner />
+      </div>
+    );
   }
 
   const isAtStart = currentIndex === 0;
   const isAtEnd = currentIndex === products.length - 1;
 
   return (
-    <div className="trending-page">
+    <div className="trending-page w-screen">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-2xl font-bold pt-8 pl-8 uppercase font-sans">Trending now</h1>
         <div className="flex pt-8 pr-8">

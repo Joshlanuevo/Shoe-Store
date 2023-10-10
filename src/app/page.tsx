@@ -7,13 +7,11 @@ import TrendingSection from "./shared/components/Sections/TrendingSection";
 export default function Home() {
   return (
     <div>
-      <section>
         <MainSection />
         <TrendingSection />
         <KidSection />
         <SecondSection />
         <EmailSection />
-      </section>
     </div>
   );
 }
