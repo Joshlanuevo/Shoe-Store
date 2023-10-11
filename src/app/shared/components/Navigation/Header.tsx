@@ -11,7 +11,7 @@ const Header = () => {
     const isHomePage = pathname === '/';
     
     return ( 
-        <div className={`navbar absolute text-base-100 z-10 hover:shadow-md ${isHomePage ? 'hover:bg-black' : 'bg-black shadow-md'}`}>
+        <div className={`navbar w-screen absolute text-base-100 z-10 hover:shadow-md ${isHomePage ? 'hover:bg-black' : 'bg-black shadow-md'}`}>
         <div className="navbar-start">
             <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

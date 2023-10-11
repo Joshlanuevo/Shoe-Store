@@ -14,6 +14,7 @@ interface Product {
 interface ProductListProps {
   items: Product[];
   currentIndex: number;
+  layout: "grid-layout" | "flex-layout"
 }
 
 const ProductList: React.FC<ProductListProps> = (props) => {
@@ -22,11 +23,16 @@ const ProductList: React.FC<ProductListProps> = (props) => {
   return (
     <div className="overflow-hidden">
       <ul
-        className="flex transition-transform duration-500 ease-in-out"
+        className={`flex transition-transform duration-500 ease-in-out ${
+          props.layout === "grid-layout" ? "flex-wrap" : ""
+        }`}
         style={{ transform: `translateX(${translateValue}%)` }}
       >
         {props.items.map((product) => (
-          <li key={product.id} className="w-full mx-4 mb-12">
+          <li 
+            key={product.id} 
+            className={`w-full ${props.layout === "grid-layout" ? "sm:w-1/2 md:w-1/3 lg:w-1/4" : ""} mx-4 mb-12`}
+          >
             <ProductItem
               id={product.id}
               name={product.name}

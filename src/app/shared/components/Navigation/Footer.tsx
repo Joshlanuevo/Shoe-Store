@@ -4,7 +4,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="footer p-10 bg-black text-neutral-content">
+    <footer className="footer w-screen p-10 bg-black text-neutral-content">
       <nav>
         <header className="footer-title">Services</header> 
         <a className="link link-hover">Branding</a>
