@@ -9,6 +9,7 @@ import PriceDropdown from '../components/PriceDropdown';
 import ColorsDropdown from '../components/ColorsDropdown';
 import SalesDropdown from '../components/SaleDropdown';
 import SizesDropdown from '../components/SizesDropdown';
+import BrandDropdown from '../components/BrandDropdown';
 
 const MensPage = () => {
   const [products, setProducts] = useState([]);
@@ -75,6 +76,9 @@ const MensPage = () => {
       </div>
       <div className="flex">
         <div className="side-navbar w-1/4 p-4">
+          <div>
+            <BrandDropdown />
+          </div>
           <div>
             <SizesDropdown />
           </div>
