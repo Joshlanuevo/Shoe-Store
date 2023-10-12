@@ -9,7 +9,7 @@ const colorMapping = {
 
 const ColorsDropdown = () => {
   return (
-    <ul className="menu bg-base-200 w-56 rounded-box p-4">
+    <ul className="menu bg-base-200 w-56 rounded-box">
       <li>
         <details open>
           <summary>Colors</summary>
