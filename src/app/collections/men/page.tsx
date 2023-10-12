@@ -6,6 +6,9 @@ import ProductList from "@/app/shared/components/Products/ProductList";
 import LoadingSpinner from '@/app/shared/components/UIElements/LoadingSpinner';
 import { TfiLayoutGrid2Alt, TfiLayoutGrid3Alt } from 'react-icons/tfi';
 import PriceDropdown from '../components/PriceDropdown';
+import ColorsDropdown from '../components/ColorsDropdown';
+import SalesDropdown from '../components/SaleDropdown';
+import SizesDropdown from '../components/SizesDropdown';
 
 const MensPage = () => {
   const [products, setProducts] = useState([]);
@@ -73,16 +76,13 @@ const MensPage = () => {
       <div className="flex">
         <div className="side-navbar w-1/4 p-4">
           <div>
-            <input type="checkbox" id="size" className="mr-2" />
-            <label htmlFor="size">Sizes</label>
+            <SizesDropdown />
           </div>
           <div>
-            <input type="checkbox" id="sale" className="mr-2" />
-            <label htmlFor="sale">Sale</label>
+            <SalesDropdown />
           </div>
           <div>
-            <input type="checkbox" id="colors" className="mr-2" />
-            <label htmlFor="colors">Colors</label>
+            <ColorsDropdown />
           </div>
           <div>
             <PriceDropdown />
