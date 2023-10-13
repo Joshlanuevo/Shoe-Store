@@ -1,6 +1,4 @@
 "use client";
-// MensPage.tsx
-
 import React, { useState, useEffect } from 'react';
 import ProductList from "@/app/shared/components/Products/ProductList";
 import LoadingSpinner from '@/app/shared/components/UIElements/LoadingSpinner';
@@ -43,7 +41,7 @@ const MensPage = () => {
           Explore BOXRAW's entire men's range of clothing. 
           The industry leader in comfort and quality.
         </p>
-      </div>
+      </div>      
       <div className="mens-navigation w-screen sticky top-0 bg-white border-solid border border-gray-500 p-4 mb-4 z-10">
         <div className="flex justify-between items-center ">
           <div>
@@ -75,7 +73,7 @@ const MensPage = () => {
         </div>
       </div>
       <div className="flex">
-        <div className="side-navbar w-1/4 p-4">
+        <div className="side-navbar w-1/4 p-4 sm:block md:block hidden">
           <div>
             <BrandDropdown />
           </div>
