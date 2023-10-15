@@ -1,29 +1,22 @@
-import React, { ReactNode, FC, MouseEvent } from 'react';
-import ReactDOM from 'react-dom';
-import { CSSTransition } from 'react-transition-group';
 
-interface SideDrawerProps {
-  onClick: (event: MouseEvent<HTMLElement>) => void;
-  children: ReactNode;
-  show: boolean;
-}
-
-const SideDrawer: FC<SideDrawerProps> = (props) => {
-  const content = (
-    <CSSTransition
-    in={props.show}
-    timeout={200}
-    classNames="slide-in-left"
-    mountOnEnter
-    unmountOnExit
-  >
-    <aside className="side-drawer" onClick={props.onClick}>
-      {props.children}
-    </aside>
-  </CSSTransition>
+const SideDrawer = () => {
+  return (
+    <div className="drawer drawer-end">
+      <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content">
+        {/* Page content here */}
+        <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">Open drawer</label>
+      </div> 
+      <div className="drawer-side">
+        <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+          {/* Sidebar content here */}
+          <li><a>Sidebar Item 1</a></li>
+          <li><a>Sidebar Item 2</a></li>
+        </ul>
+      </div>
+    </div>
   );
-
-  return ReactDOM.createPortal(content, document.getElementById("drawer-hook")!);
 };
 
 export default SideDrawer;
