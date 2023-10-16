@@ -1,5 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { BsFilterLeft } from 'react-icons/bs'
 
 import BrandDropdown from '@/app/collections/components/BrandDropdown';
 import ColorsDropdown from '@/app/collections/components/ColorsDropdown';
@@ -20,8 +21,9 @@ const SideDrawer: React.FC<SideDrawerProps> = ({ setCurrentLayout }) => {
         <div>
           <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
-            <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">
-              Open drawer
+            <label htmlFor="my-drawer-4" className="drawer-button flex items-center p-4">
+              Filter 
+              <span style={{ marginLeft: '6px' }}><BsFilterLeft /></span>
             </label>
           </div>
           <div className="drawer-side">
