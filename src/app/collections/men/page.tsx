@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import ProductList from "@/app/shared/components/Products/ProductList";
 import LoadingSpinner from '@/app/shared/components/UIElements/LoadingSpinner';
 import { TfiLayoutGrid2Alt, TfiLayoutGrid3Alt } from 'react-icons/tfi';
@@ -8,6 +9,7 @@ import ColorsDropdown from '../components/ColorsDropdown';
 import SalesDropdown from '../components/SaleDropdown';
 import SizesDropdown from '../components/SizesDropdown';
 import BrandDropdown from '../components/BrandDropdown';
+import SideDrawer from '@/app/shared/components/UIElements/SideDrawer';
 
 const MensPage = () => {
   const [products, setProducts] = useState([]);
@@ -24,6 +26,8 @@ const MensPage = () => {
 
     fetchProducts();
   }, []);
+
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   if (loading) {
     return (
@@ -70,6 +74,7 @@ const MensPage = () => {
               <li><a>Price High to Low</a></li>
             </ul>
           </div>
+          {isMobile && <SideDrawer setCurrentLayout={setCurrentLayout} />}
         </div>
       </div>
       <div className="flex">
