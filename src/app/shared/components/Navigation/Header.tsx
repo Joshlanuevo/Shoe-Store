@@ -10,7 +10,7 @@ const Header = () => {
 
     const isHomePage = pathname === '/';
 
-    const isActive = (link) => pathname === link;
+    const isActive = (link: string) => pathname === link;
     
     return (
         <div className={`navbar w-screen absolute text-base-100 z-10 hover:shadow-md ${isHomePage ? 'hover:bg-black' : 'bg-black shadow-md'}`}>
